@@ -1,0 +1,47 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin: 20px;
+  max-width: 500px; /* Adjust the maximum width as needed */
+  background-color: #f0f0f0; /* Background color for the grid */
+  border: 1px solid #dcdcdc; /* Add a subtle border */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.grid-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 1px solid #dcdcdc;
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 1s linear;
+}
+.grid-cell:hover {
+  border: 2px solid #dcdcdc;
+}
+.empty-cell {
+  background-color: #f0f0f0; /* Lighter background for empty cells */
+  border: none; /* Remove borders for empty cells */
+  font-weight: normal; /* Make the text normal for empty cells */
+}
+
+/* Styling for the dropdown */
+select {
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 10px 0;
+}
+
+/* Styling for the dropdown options */
+select option {
+  background-color: #fff;
+  color: #333;
+}
